@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+  background-image: url("./skyy.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+    padding-top: 40px ;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #0b94ef; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+#search {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.row div img {
+    height: 100px;
+
+}
+#weather{
+    height: 10vh;
+    margin-bottom: 200px;
+    display: contents;
+}
+
+.heading{
+    font-size: 50px;
+    color: rgb(33 207 207);
+}
+#clock, #date{
+    font-size: 25px;
+    color: rgb(241, 243, 243);
+    display: inline-block;
+    margin-left: 70%;
+    padding: 3px;
+    /* font-family: monospace; */
+    /* text-decoration: underline; */  
+}
+
+.headd{
+    color: rgb(19, 196, 196);
+    font-size:25px;
+    margin-left: 70%;
+    text-decoration: underline;
+    padding-bottom: 2px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .row {
+        font-size: 25px;
+    }
+
+    #search {
+        font-size: 20px;
+    }
+
+    #clock,
+    #date {
+        font-size: 20px;
+    }
+
+    .headd {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 30px;
+    }
+
+    .row {
+        font-size: 20px;
+    }
+
+    #search {
+        font-size: 15px;
+    }
+
+    #clock,
+    #date {
+        font-size: 15px;
+    }
+
+    .headd {
+        font-size: 15px;
+    }
+}
