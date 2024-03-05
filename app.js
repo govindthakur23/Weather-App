@@ -19,7 +19,9 @@ const showWeather = async (data) => {
     }
     weather.innerHTML =
         ` 
-
+        <div>
+             <img src="https://cdn-icons-png.freepik.com/512/4834/4834559.png" alt="">  
+        </div>
         <div style="color: white;">
             <h2 >${data.main.temp} °C</h2>
             <h3 >${data.weather[0].main}</h3>
@@ -31,7 +33,7 @@ const showWeather = async (data) => {
             <h3>Visibility: ${data.visibility} meters</h3>
         </div>`
 }
-
+    
 
 function updateClock() {
     const now = new Date();
