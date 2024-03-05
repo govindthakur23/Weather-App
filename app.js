@@ -18,9 +18,8 @@ const showWeather = async (data) => {
         weather.innerHTML = `<h2 style=" color:white; font-style:italic; "> City Not Found </h2>`
     }
     weather.innerHTML =
-        ` <div>
-             <img src="https://cdn-icons-png.freepik.com/512/4834/4834559.png" alt="">  
-        </div>
+        ` 
+
         <div style="color: white;">
             <h2 >${data.main.temp} °C</h2>
             <h3 >${data.weather[0].main}</h3>
